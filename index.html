@@ -1,204 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Golden Warrior</title>
-
-  <!-- Подключаем шрифт Playfair Display -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-
+  <meta charset="UTF-8">
+  <title>The Golden Warrior: The Timeless Symbol of Kazakhstan</title>
+  <!-- Подключаем красивый шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
   <style>
-    body, html {
-      margin: 0; 
+    body {
+      margin: 0;
       padding: 0;
-      height: 100%;
       font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
     }
 
     header {
-      height: 400px;
       background-image: url('https://olaylar.az/media/2018/06/07/49_(1).jpg');
+      background-size: cover;
       background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-color: #000; /* если фото прозрачное, фон черный для контраста */
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
       color: white;
       text-align: center;
-      position: relative;
+      padding: 120px 20px;
+      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4); /* затемнение */
     }
 
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 0;
+    h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 48px;
+      margin: 0;
+      letter-spacing: 2px;
     }
 
-    header h1 {
-      position: relative;
-      font-family: 'Playfair Display', serif;
-      font-size: 3em;
-      margin: 0 20px;
-      z-index: 1;
-      max-width: 90%;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        height: 250px;
-      }
-      header h1 {
-        font-size: 1.8em;
-      }
+    p.subtitle {
+      font-size: 22px;
+      margin-top: 10px;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>The Golden Warrior: The Timeless Symbol of Kazakhstan</h1>
+    <h1>The Golden Warrior</h1>
+    <p class="subtitle">The Timeless Symbol of Kazakhstan</p>
   </header>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Golden Warrior</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-  <style>
-    html {
-      scroll-behavior: smooth; /* плавный скролл */
-    }
-    body, html {
-      margin: 0; padding: 0;
-      font-family: Arial, sans-serif;
-    }
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      background: rgba(0,0,0,0.7);
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px 0;
-      z-index: 10;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1em;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: gold;
-    }
-    header {
-      height: 400px;
-      background-image: url('https://i.siteapi.org/jf3D5MqgYf_oWZMbN3NQlkJ28tE=/57x76:505x421/fit-in/312x240/filters:fill(transparent):format(png)/804724c13a1eabe.ru.s.siteapi.org/img/6t5vvgegy0co4owc4k8oswgcowcoss');
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-color: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      position: relative;
-      padding-top: 50px; /* чтобы меню не налезало */
-    }
-    header::before {
-      content: "";
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 0;
-    }
-    header h1 {
-      position: relative;
-      font-family: 'Playfair Display', serif;
-      font-size: 3em;
-      margin: 0 20px;
-      z-index: 1;
-      max-width: 90%;
-    }
-    @media (max-width: 600px) {
-      header {
-        height: 250px;
-      }
-      header h1 {
-        font-size: 1.8em;
-      }
-      nav {
-        gap: 15px;
-        padding: 10px 0;
-      }
-      nav a {
-        font-size: 0.9em;
-      }
-    }
-    /* Стили для секций */
-    section {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2em;
-      margin-bottom: 20px;
-      border-bottom: 2px solid gold;
-      padding-bottom: 10px;
-      color: #333;
-    }
-    section p {
-      font-size: 1.1em;
-      line-height: 1.5;
-      color: #555;
-    }
-  </style>
-</head>
-<body>
-  <nav>
-    <a href="#home">Главная</a>
-    <a href="#about">О герое</a>
-    <a href="#history">История</a>
-    <a href="#gallery">Галерея</a>
-    <a href="#contact">Контакты</a>
-  </nav>
-
-  <header id="home">
-    <h1>The Golden Warrior: The Timeless Symbol of Kazakhstan</h1>
-  </header>
-
-  <section id="about">
-    <h2>О герое</h2>
-    <p>Здесь можно написать информацию о Золотом Воине, его значении и символизме для Казахстана.</p>
-  </section>
-
-  <section id="history">
-    <h2>История</h2>
-    <p>Краткий рассказ о истории Золотого Воина, археологических находках и их значении.</p>
-  </section>
-
-  <section id="gallery">
-    <h2>Галерея</h2>
-    <p>Здесь можно разместить фотографии, иллюстрации и другие изображения.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Контакты</h2>
-    <p>Контактная информация, ссылки на соцсети или форма обратной связи.</p>
-  </section>
 </body>
 </html>

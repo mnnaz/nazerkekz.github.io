@@ -10,29 +10,46 @@
 
   <style>
     body, html {
-      margin: 0; padding: 0;
-      font-family: Arial, sans-serif;
+      margin: 0; 
+      padding: 0;
       height: 100%;
+      font-family: Arial, sans-serif;
     }
+
     header {
-      position: relative;
       height: 400px;
       background-image: url('https://i.siteapi.org/jf3D5MqgYf_oWZMbN3NQlkJ28tE=/57x76:505x421/fit-in/312x240/filters:fill(transparent):format(png)/804724c13a1eabe.ru.s.siteapi.org/img/6t5vvgegy0co4owc4k8oswgcowcoss');
-      background-size: cover;
       background-position: center;
-      color: white;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #000; /* если фото прозрачное, фон черный для контраста */
+
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+
+      color: white;
       text-align: center;
+      position: relative;
     }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
     header h1 {
+      position: relative;
       font-family: 'Playfair Display', serif;
-      font-size: 2.8em;
-      max-width: 90%;
-      text-shadow: 3px 3px 7px rgba(0,0,0,0.8);
+      font-size: 3em;
       margin: 0 20px;
+      z-index: 1;
+      max-width: 90%;
     }
+
     @media (max-width: 600px) {
       header {
         height: 250px;

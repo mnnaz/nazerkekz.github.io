@@ -11,6 +11,8 @@
       padding: 0;
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
+      color: #444;
+      line-height: 1.6;
     }
 
     header {
@@ -35,6 +37,36 @@
       margin-top: 10px;
       font-style: italic;
     }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 32px;
+      color: #333;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
 <body>
@@ -43,14 +75,13 @@
     <p class="subtitle">The Timeless Symbol of Kazakhstan</p>
   </header>
 
-  <section id="introduction" style="padding: 40px 20px; max-width: 900px; margin: auto;">
-    <h2 style="font-family: 'Cinzel', serif; font-size: 32px; color: #333;">Introduction</h2>
+  <section id="introduction">
+    <h2>Introduction</h2>
 
     <img src="https://qazaqgeography.kz/assets/media/traditsii/altyn-adam/altyn-adam.jpg" 
-         alt="Golden Warrior" 
-         style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 20px;" />
+         alt="Golden Warrior" />
 
-    <p style="font-size: 18px; line-height: 1.6; color: #444;">
+    <p>
       In the heart of Central Asia lies a land rich with history, culture, and enduring symbols of national pride. 
       Among these symbols, none stand taller—both literally and metaphorically—than the Golden Warrior of Kazakhstan. 
       Known locally as the “Golden Man,” this ancient figure represents more than just an archaeological discovery; 
@@ -61,15 +92,53 @@
     </p>
   </section>
 
-  <section id="storymap" style="max-width: 1000px; margin: 40px auto;">
-    <h2 style="font-family: 'Cinzel', serif; font-size: 32px; color: #333;">Interactive StoryMap: The Golden Warrior</h2>
+  <section id="storymap">
+    <h2>Interactive StoryMap: The Golden Warrior</h2>
 
     <iframe src="https://uploads.knightlab.com/storymapjs/19894b8c4aaac212441b98ea69b8e406/golden-man/index.html" 
             width="100%" height="700px" frameborder="0" allowfullscreen></iframe>
   </section>
+
+  <!-- Новая секция с историей открытия -->
+  <section id="discovery-story">
+    <h2>The Discovery Story</h2>
+    <p>
+      In 1963, a catastrophic mudflow destroyed Lake Issyk and nearby infrastructure, including a local vehicle depot. When Issyk received city status in 1968, plans were made to rebuild the depot. As required by Soviet law, a preliminary archaeological survey was conducted. Archaeologist Beken Nurmukhanbetov led the inspection, which identified the kurgan at the construction site. Excavations took place throughout 1969.
+    </p>
+    <p>
+      Although the central tomb was plundered, Nurmukhanbetov insisted on checking the area just north of the main burial. There, a bulldozer struck preserved wooden logs, and further investigation revealed the untouched southern chamber. At this point, Kemal Akishev joined the team and directed the rest of the excavation.
+    </p>
+    <p>
+      Today, Beken Nurmukhanbetov manages an open-air museum at the site, where he remains the principal guardian of the Saka burial mounds.
+    </p>
+  </section>
+
+  <!-- Новая секция о курганах и артефактах -->
+  <section id="kurgan-details">
+    <h2>The Issyk Kurgan and its Treasures</h2>
+    <p>
+      The Issyk burial complex includes 45 royal burial mounds, or kurgans, with the Issyk Kurgan itself measuring 60 meters in diameter and 6 meters in height. Inside, archaeologists discovered two burial chambers: a looted central one and an untouched southern chamber, preserving both the body and a rich funerary inventory.
+    </p>
+    <p>
+      Over 4,000 gold items, an iron sword and dagger, a bronze mirror, and various vessels were found inside. The burial garments and headgear were adorned with intricate gold plaques depicting animals like horses, leopards, and mountain goats, as well as sacred trees. The triple-coiled gold neck torc with tiger-head terminals and a gold earring with turquoise danglers further underscored the high status of the individual buried.
+    </p>
+    <p>
+      The silver bowl with the Issyk inscription, engraved with 26 characters and dating back to the 6th or 5th century BCE, remains a mystery as it is yet to be deciphered.
+    </p>
+  </section>
+
+  <!-- Новая секция про значение -->
+  <section id="national-symbol">
+    <h2>A National Symbol of Kazakhstan</h2>
+    <p>
+      The treasures from the Issyk Kurgan, including a full replica of the Golden Warrior, were initially displayed at the Museum of Archaeology in Almaty and are now housed at the National Museum of Gold and Precious Metals in Astana. The image of the Golden Warrior standing atop a winged snow leopard has become one of Kazakhstan’s most enduring national symbols.
+    </p>
+    <p>
+      Replicas of the Golden Man are prominently displayed across many cities in Kazakhstan, most notably atop the Monument of Independence in Almaty’s main square.
+    </p>
+    <p>
+      To date, five “Golden Men” burials have been found, all sharing striking similarities that suggest a widespread Saka cultural identity spanning vast regions of Central Asia and Southern Siberia.
+    </p>
+  </section>
 </body>
 </html>
-# The Issyk Kurgan and the Discovery of the Golden Warrior
-
-![Golden Warrior](images/golden_warrior.jpg)
-

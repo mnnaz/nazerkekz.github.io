@@ -1,295 +1,42 @@
-Отлично! Ты хочешь, чтобы я помог оформить твой сайт с меню навигации, как в примере по ссылке — с фиксированным верхним меню, плавной прокруткой по разделам, и аккуратным дизайном. Сделаю тебе улучшенный код с меню, которое будет красиво работать, а также немного оптимизирую структуру твоей страницы.
-
----
-
-### Вот обновлённый полный HTML с меню, плавной прокруткой и улучшенной версткой:
-
-```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>The Golden Warrior: The Timeless Symbol of Kazakhstan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Заголовок с изображением</title>
   <style>
-    /* Сброс отступов */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth; /* Плавная прокрутка */
-    }
-
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      color: #444;
-      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f0f0f0;
     }
-
-    /* Навигация */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(20, 20, 20, 0.9);
-      display: flex;
-      justify-content: center;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-      padding: 15px 20px;
-      font-family: 'Cinzel', serif;
-      font-weight: 700;
-    }
-
-    nav ul li a {
+    .main-header {
+      background-color: #4CAF50;
       color: white;
-      text-decoration: none;
-      font-size: 18px;
-      padding: 8px 12px;
-      transition: background-color 0.3s, color 0.3s;
-      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
     }
-
-    nav ul li a:hover,
-    nav ul li a:focus {
-      background-color: #d4af37;
-      color: #111;
-      outline: none;
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
     }
-
-    /* Отступ сверху для основного контента из-за фиксированного меню */
-    main {
-      padding-top: 80px;
-      max-width: 900px;
-      margin: 0 auto 60px auto;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    header {
-      background-image: url('https://olaylar.az/media/2018/06/07/49_(1).jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
-      box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
-      font-family: 'Cinzel', serif;
-    }
-
-    header h1 {
-      font-size: 48px;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-
-    header p.subtitle {
-      font-size: 22px;
-      font-style: italic;
-    }
-
-    h2 {
-      font-family: 'Cinzel', serif;
-      font-size: 32px;
-      color: #333;
-      margin-bottom: 20px;
-      margin-top: 40px;
-      border-bottom: 2px solid #d4af37;
-      padding-bottom: 8px;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
-      font-size: 18px;
-    }
-
-    ul li {
-      margin-bottom: 10px;
-    }
-
-    figure {
-      margin-bottom: 30px;
-    }
-
-    figcaption {
-      font-size: 14px;
-      color: #666;
-      text-align: center;
-      margin-top: 6px;
-      font-style: italic;
-    }
-
-    iframe {
-      border: none;
-      border-radius: 12px;
-      margin-top: 20px;
-      margin-bottom: 40px;
-    }
-
-    /* Специально для YouTube видео в блоке My Experience */
-    #my-experience iframe {
-      display: block;
-      margin: 20px auto;
-      max-width: 100%;
-      height: 315px;
-    }
-
-    /* Адаптивность */
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        gap: 10px;
-      }
-      nav ul li a {
-        font-size: 16px;
-      }
-      header h1 {
-        font-size: 36px;
-      }
-      header p.subtitle {
-        font-size: 18px;
-      }
-      h2 {
-        font-size: 26px;
-      }
+    .title {
+      font-size: 1.5rem;
+      margin: 0;
     }
   </style>
 </head>
 <body>
-  <!-- Меню -->
-  <nav>
-    <ul>
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#storymap">StoryMap</a></li>
-      <li><a href="#issyk-kurgan">Issyk Kurgan</a></li>
-      <li><a href="#golden-warrior-clothing">Clothing</a></li>
-      <li><a href="#national-symbol">National Symbol</a></li>
-      <li><a href="#my-experience">My Experience</a></li>
-    </ul>
-  </nav>
-
-  <header>
-    <h1>The Golden Warrior</h1>
-    <p class="subtitle">The Timeless Symbol of Kazakhstan</p>
+  <header class="main-header">
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtwB0ulyG5ZWNLJVmKblQ340HNQD8aVwp7Q&s"
+      alt="Логотип"
+      class="logo"
+    />
+    <h1 class="title">Добро пожаловать на мой сайт</h1>
   </header>
-
-  <main>
-    <section id="introduction">
-      <h2>Introduction</h2>
-      <img src="https://qazaqgeography.kz/assets/media/traditsii/altyn-adam/altyn-adam.jpg" alt="Golden Warrior" />
-      <p>
-        In the heart of Central Asia lies a land rich with history, culture, and enduring symbols of national pride. Among these symbols, none stand taller—both literally and metaphorically—than the Golden Warrior of Kazakhstan. Known locally as the “Golden Man,” this ancient figure represents more than just an archaeological discovery; he is a powerful emblem of identity, unity, and resilience for the Kazakh people. Unearthed in 1969, the Golden Warrior has since become a national icon featured in monuments, currency, and the country’s collective memory. But who was he? Why is his golden armor so significant? And how did this ancient warrior come to define the spirit of an entire nation? In this blog, I explore the fascinating story of the Golden Warrior—Kazakhstan’s timeless symbol of sovereignty and strength.
-      </p>
-    </section>
-
-    <section id="storymap">
-      <h2>Interactive StoryMap: The Golden Warrior</h2>
-      <iframe src="https://uploads.knightlab.com/storymapjs/19894b8c4aaac212441b98ea69b8e406/golden-man/index.html" width="100%" height="700" allowfullscreen></iframe>
-    </section>
-
-    <section id="issyk-kurgan">
-      <h2>THE ISSYK KURGAN AND THE DISCOVERY OF THE GOLDEN WARRIOR</h2>
-      <p>In 1969, Soviet archaeologists led by Kemal Akishev uncovered a remarkable burial complex near Issyk, about 50 km east of Almaty. The site includes 45 royal burial mounds (kurgans) ranging from 30 to 90 meters in diameter and 4 to 15 meters in height.</p>
-      <p>The Issyk Kurgan, located in the western part of the necropolis, measured 60 meters in diameter and 6 meters in height. Excavations revealed two burial chambers: a looted central one and an untouched southern chamber that preserved both the body and a rich funerary inventory.</p>
-      <p>Inside the southern chamber, made from Tian Shan spruce logs, the remains of a 16–18-year-old individual with predominantly European features were found. The gender remains debated, as the grave goods could belong to either a young man or woman. Over 4,000 gold items were uncovered, along with an iron sword and dagger, a bronze mirror, and ceramic, wooden, and metal vessels. Among these treasures was a silver bowl engraved with 26 characters—the famous Issyk inscription—which remains undeciphered.</p>
-      <p>The skeleton was adorned with golden plaques, a golden-tipped arrow, a whip with a gold-wrapped handle, and a pouch containing a bronze mirror and red ochre pigment. A wooden scabbard held a cavalry sword, and a dagger with golden overlays featured elk and horse motifs. A 70-centimeter-tall conical headdress decorated with gold plaques depicting horses, leopards, mountain goats, birds, and sacred trees linked the individual to the Saka Tigraxauda (“pointed-hat Sakas”).</p>
-      <p>The ceremonial outfit included a silk tunic, a short red suede caftan, narrow trousers, and high heelless boots, with a wide golden belt over the caftan. The style and craftsmanship date the burial to the 5th–3rd centuries BCE.</p>
-      <figure>
-        <img src="https://tn.fishki.net/26/upload/post/2018/05/07/2591253/032.jpg" alt="The Issyk Kurgan" />
-        <figcaption>The Issyk Kurgan burial site in Kazakhstan.</figcaption>
-      </figure>
-      <figure>
-        <img src="https://gdb.rferl.org/8a59680d-433b-4c21-87a6-12b3472373c1_w1597_n_s.jpg" alt="Golden Warrior replica" />
-        <figcaption>Replica of the Golden Warrior from the Issyk burial mound.</figcaption>
-      </figure>
-      <figure>
-        <img src="http://kronk.spb.ru/img/akishev-ka-1978-04s.jpg" alt="Excavation site" />
-        <figcaption>Excavation of the Issyk Kurgan led by Kemal Akishev.</figcaption>
-      </figure>
-      <figure>
-        <img src="http://kronk.spb.ru/img/akishev-ka-1978-05s.jpg" alt="Archaeologists at work" />
-        <figcaption>Archaeologists working on the site during the 1969 excavation.</figcaption>
-      </figure>
-
-      <h2>THE DISCOVERY STORY</h2>
-      <p>In 1963, a devastating mudflow destroyed Lake Issyk and nearby infrastructure. When the area was developed in 1968, archaeologist Beken Nurmukhanbetov led a survey that identified the kurgan. Although the central tomb was plundered, the untouched southern chamber was discovered nearby, prompting Kemal Akishev to join the excavation.</p>
-      <p>Today, Nurmukhanbetov manages the open-air museum at the site, preserving the Saka burial mounds.</p>
-      <figure>
-        <img src="https://gdb.rferl.org/61e28a2c-2330-45d4-9605-bce126f0d01a_w1597_n_s.jpg" alt="Kemal Akishev and archaeological team" />
-        <figcaption>
-          The "Golden Man" was discovered by an archaeological expedition led by Kemal Akishev (1924–2003). In this museum exhibit photo, he is pictured in the top row, center, wearing glasses. The archaeological team that uncovered and excavated the kurgan with the "Golden Man" included then junior researcher Beken Nurmukhanbetov (seated cross-legged in the bottom row).
-        </figcaption>
-      </figure>
-    </section>
-
-    <section id="golden-warrior-clothing">
-      <h2>Clothing of the Golden Warrior</h2>
-      <img src="https://st4.depositphotos.com/14242374/24075/v/1600/depositphotos_240751908-stock-illustration-vector-image-golden-man-costume.jpg" alt="Golden Warrior Costume Illustration" />
-      <p>The attire of the Golden Warrior reflects his high status and ceremonial importance. The burial garments consisted of several intricately crafted elements:</p>
-      <ul>
-        <li><strong>Silk Tunic:</strong> Worn as the base layer, the tunic was made from fine silk, a luxury material indicating wealth and connection to distant trade routes.</li>
-        <li><strong>Red Suede Caftan:</strong> Over the tunic, a short caftan made of soft red suede was worn. This garment was tailored to fit snugly and was richly decorated, suggesting ceremonial use rather than everyday wear.</li>
-        <li><strong>Narrow Trousers:</strong> The lower body was covered by narrow trousers that provided ease of movement while maintaining an elegant silhouette.</li>
-        <li><strong>Heelless High Boots:</strong> The footwear consisted of high boots without heels, a style typical for nomadic cultures of the region, designed for riding and mobility.</li>
-        <li><strong>Golden Belt:</strong> A wide golden belt with elaborate ornamentation was worn over the caftan, serving both as a functional and decorative element, symbolizing power and prestige.</li>
-      </ul>
-      <p>Together, these clothing items, combined with the exquisite gold plaques and decorations adorning the warrior, present a picture of a figure of significant social and possibly royal stature within the Saka culture.</p>
-    </section>
-
-    <section id="national-symbol">
-      <h2>A National Symbol of Kazakhstan</h2>
-      <p>
-        The treasures and a full replica of the Golden Warrior were first displayed in Almaty and are now housed at the National Museum of Gold and Precious Metals in Astana. The Golden Warrior, standing atop a winged snow leopard, has become a powerful symbol of Kazakhstan’s heritage.
-      </p>
-      <p>
-        Five “Golden Men” burials have been found across Kazakhstan, sharing similar material culture and funerary rites, reflecting a widespread Saka cultural identity from Southern Siberia to Tuva.
-      </p>
-      <p>
-        The Issyk Kurgan stands out for its exceptional preservation and connects Kazakhstan’s ancient roots with its modern national pride.
-      </p>
-      <img src="https://png.pngtree.com/thumb_back/fh260/background/20220620/pngtree-almaty---sculpture-of-golden-warrior-square-closeup-sky-photo-image_31834918.jpg" alt="Golden Warrior Statue in Almaty" />
-    </section>
-
-    <section id="my-experience">
-      <h2>My Experience Visiting the Museum</h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/D3jRp1RCzX0" allowfullscreen></iframe>
-  Hi, I’m Nazerke! About one year ago, I had the incredible opportunity to visit a museum that deeply connected me to Kazakhstan’s rich history — the place where the story of the Golden Warrior, or “Golden Man,” comes to life.
-  </p>
-  <p style="font-size: 18px; line-height: 1.6;">
-    Seeing the actual artifacts and the replica of the Golden Warrior in person was a moving experience. Standing face to face with the warrior’s golden armor and intricate decorations made me realize how much this figure means not just as an archaeological discovery, but as a powerful symbol of national identity and pride. The craftsmanship was astonishing — every plaque, every detail on the headdress and caftan told a story of a people proud of their roots and skilled in artistry.
-  </p>
-  <p style="font-size: 18px; line-height: 1.6;">
-    Walking through the exhibits, I felt transported back in time to the era of the Saka people, imagining the young warrior in his full ceremonial outfit — the silk tunic, the golden belt, the conical headdress decorated with animal motifs — all reflecting a culture rich in symbolism and tradition.
-  </p>
-  <p style="font-size: 18px; line-height: 1.6;">
-    The museum did more than show me historical objects; it gave me a glimpse into the lives, beliefs, and values of an ancient civilization that still resonates today. It reminded me how history is alive — connecting us across centuries and inspiring respect for those who came before.
-  </p>
-  <p style="font-size: 18px; line-height: 1.6;">
-    Visiting the museum and seeing the Golden Warrior firsthand was truly unforgettable. It deepened my appreciation for Kazakhstan’s heritage and showed me how a single figure can carry the weight of an entire nation’s story.
-  </p>
-</section>
-
-<!-- Далее твой следующий контент -->
+</body>
+</html>

@@ -3,88 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaporetto stop Santa Marta</title>
+    <title>Vaporetto Stop Santa Marta</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto&display=swap');
-
         body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
         }
 
-        header {
-            height: 70vh;
-            background: url('https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/296988ed-ff94-402d-af3b-38c53a5d7ba1/-/format/webp/-/resize/1300x/') center/cover no-repeat;
+        .header {
+            position: relative;
+            text-align: center;
+            color: #fff;
+            background-image: url('https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/296988ed-ff94-402d-af3b-38c53a5d7ba1/-/format/webp/-/resize/1300x/');
+            background-size: cover;
+            background-position: center;
+            height: 250px;
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            position: relative;
         }
 
-        header::after {
-            content: "";
-            position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
-            background-color: rgba(0,0,0,0.3); /* лёгкое затемнение */
-        }
-
-        header h1 {
-            position: relative;
-            font-family: 'Playfair Display', serif;
+        .header h1 {
             font-size: 3em;
-            color: #ffffff; /* белый текст */
-            -webkit-text-stroke: 2px black; /* рамка вокруг букв */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* мягкая тень для объёма */
-            margin: 0;
-            z-index: 1;
+            background-color: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-shadow: 2px 2px 4px #000;
         }
 
-        .info {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 30px 20px;
-            font-size: 1.1em;
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .content h2 {
             color: #333;
-            background-color: rgba(255, 255, 255, 0.9); /* слегка прозрачный фон */
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-top: 0;
         }
 
-        .info p {
-            margin-bottom: 1.2em;
+        .content p {
+            color: #444;
+            font-size: 1.1em;
         }
 
-        .info a {
-            color: #0077cc;
+        a {
+            color: #0066cc;
             text-decoration: none;
-            font-weight: bold;
         }
 
-        .info a:hover {
+        a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Vaporetto stop Santa Marta</h1>
-    </header>
 
-    <section class="info">
-        <p>
-            The Vaporetto stop at Santa Marta is a key point in Venice’s water transport system. 
-            Historically, this area has been a hub for both locals and tourists traveling along the Grand Canal.
-        </p>
-        <p>
-            Узнать больше о Санта Марта можно на сайте: 
-            <a href="https://europeforvisitors.com/venice/actv/s-marta.htm" target="_blank">
-                Подробнее о Санта Марта
-            </a>.
-        </p>
-    </section>
+<div class="header">
+    <h1>Vaporetto Stop Santa Marta</h1>
+</div>
+
+<div class="content">
+    <h2>Info about Santa Marta</h2>
+    <p>
+        Santa Marta is near a port entrance at the southwest corner of Venice's southwest center, on a small canal that runs inland from the larger Giudecca Canal used by cruise ships and water buses.
+    </p>
+    <p>
+        This ACTV stop is convenient if you're exploring Venice from a river vessel or other small ship at the Santa Marta pier, which is just to the west of the San Basilio Cruise Terminal.
+    </p>
+    <p>
+        The Santa Marta station is served by ACTV Lines 4.1, 4.2, 5.1, 5.2, 6 public water buses.
+    </p>
+    <p>
+        We aren't aware of any hotels in Santa Marta's immediate vicinity, but the Hotel Tiziano (three stars) isn't too far away.
+    </p>
+    <p>
+        Note: This station does not have a ticket booth or vending machine, so <a href="https://europeforvisitors.com/venice/actv/s-marta.htm" target="_blank">here's what to do</a> if you need to board a water bus without a valid ACTV ticket or Tourist Travel Card.
+    </p>
+</div>
+
 </body>
 </html>

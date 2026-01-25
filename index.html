@@ -4,34 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vaporetto stop Santa Marta</title>
+    <!-- Подключаем красивый шрифт Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
             color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: center;
         }
 
         header {
-            background-color: #4CAF50;
+            position: relative;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
             color: white;
-            padding: 20px 0;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/296988ed-ff94-402d-af3b-38c53a5d7ba1/-/format/webp/-/resize/1300x/');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4; /* прозрачность фона */
+            z-index: 1;
+        }
+
+        header h1 {
+            position: relative;
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            z-index: 2;
+            margin: 0;
         }
 
         main {
             padding: 20px;
+            text-align: center;
         }
 
-        img {
+        main img {
             max-width: 90%;
             height: auto;
             border-radius: 10px;
             margin-top: 20px;
         }
 
-        p {
+        main p {
             max-width: 700px;
             margin: 20px auto;
             line-height: 1.6;
@@ -44,10 +73,6 @@
     </header>
 
     <main>
-        <img src="https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/296988ed-ff94-402d-af3b-38c53a5d7ba1/-/format/webp/-/resize/1300x/"
-             alt="Vaporetto stop Santa Marta" 
-             title="Vaporetto stop Santa Marta">
-        
         <p>
             The Vaporetto stop at Santa Marta is a key point in Venice’s water transport system. 
             Historically, this area has been a hub for both locals and tourists traveling along the Grand Canal.

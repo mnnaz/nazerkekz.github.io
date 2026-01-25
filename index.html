@@ -3,92 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Аудио версия сайта об информации Vaporetto Stop Santa Marta</title>
+    <title>Vaporetto Stop Santa Marta</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f2f2f2;
+            line-height: 1.6;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
+        }
+
+        .header {
+            position: relative;
             text-align: center;
+            color: #fff;
+            background-image: url('https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/296988ed-ff94-402d-af3b-38c53a5d7ba1/-/format/webp/-/resize/1300x/');
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        h1 {
-            font-size: 2em;
-            margin-top: 30px;
-            color: #000;
-            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
-            padding: 10px;
-            display: inline-block;
-            border: 2px solid black;
-            background-color: rgba(255, 255, 255, 0.5);
+        .header h1 {
+            font-size: 3em;
+            background-color: rgba(0,0,0,0.5);
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-shadow: 2px 2px 4px #000;
         }
 
-        .audio-container {
-            margin: 20px auto;
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        .photo-container img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 10px;
-            margin: 20px 0;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        .content h2 {
+            color: #333;
+            margin-top: 0;
         }
 
-        audio {
-            margin-top: 15px;
+        .content p {
+            color: #444;
+            font-size: 1.1em;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <h1>Аудио версия сайта об информации Vaporetto Stop Santa Marta</h1>
+<div class="header">
+    <h1>Vaporetto Stop Santa Marta</h1>
+</div>
 
-    <div class="audio-container">
-        <audio controls>
-            <source src="https://drive.google.com/uc?export=download&id=1dSjO6mHMKSOQD0ghkdVPPuRr3Uhu-inV" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <div class="photo-container">
-        <img src="https://europeforvisitors.com/venice/images/actv/s-marta-325-4099133.jpg" alt="Vaporetto Stop Santa Marta">
-    </div>
+<div class="content">
+    <h2>Info about Santa Marta</h2>
+    <p>
+        Santa Marta is near a port entrance at the southwest corner of Venice's southwest center, on a small canal that runs inland from the larger Giudecca Canal used by cruise ships and water buses.
+    </p>
+    <p>
+        This ACTV stop is convenient if you're exploring Venice from a river vessel or other small ship at the Santa Marta pier, which is just to the west of the San Basilio Cruise Terminal.
+    </p>
+    <p>
+        The Santa Marta station is served by ACTV Lines 4.1, 4.2, 5.1, 5.2, 6 public water buses.
+    </p>
+    <p>
+        We aren't aware of any hotels in Santa Marta's immediate vicinity, but the Hotel Tiziano (three stars) isn't too far away.
+    </p>
+    <p>
+        Note: This station does not have a ticket booth or vending machine, so <a href="https://europeforvisitors.com/venice/actv/s-marta.htm" target="_blank">here's what to do</a> if you need to board a water bus without a valid ACTV ticket or Tourist Travel Card.
+    </p>
+</div>
 
 </body>
 </html>
-<!-- Google Maps Section -->
+<!-- Audio Guide Section -->
 <div style="text-align: center; margin: 50px 0;">
     <h2 style="
         font-family: 'Arial', sans-serif; 
-        font-size: 2.5em; 
+        font-size: 2em; 
         color: #222; 
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         margin-bottom: 20px;
     ">
-        Google Maps Location
+        Audio Guide
     </h2>
 
-    <a href="https://maps.app.goo.gl/8pNtts8tWNkB6YFb8?g_st=iw" target="_blank" 
-       style="
-         display: inline-block;
-         padding: 12px 30px;
-         background-color: #34A853;
-         color: white;
-         font-size: 1.2em;
-         font-weight: bold;
-         border-radius: 8px;
-         text-decoration: none;
-         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-         transition: background-color 0.3s, transform 0.2s;
-       ">
-       Open in Google Maps
-    </a>
+    <audio controls style="margin-bottom: 30px; width: 80%;">
+        <source src="https://drive.google.com/uc?export=download&id=1dSjO6mHMKSOQD0ghkdVPPuRr3Uhu-inV" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
 
-    <div style="margin-top: 30px;">
+    <div>
         <img src="https://europeforvisitors.com/venice/images/actv/s-marta-325-4099133.jpg" 
-             alt="Santa Marta Map Preview" 
+             alt="Santa Marta Vaporetto Stop" 
              style="max-width: 80%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
     </div>
 </div>

@@ -3,107 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Version of Vaporetto Stop Santa Marta</title>
+    <title>Аудио версия сайта об информации Vaporetto Stop Santa Marta</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
-        }
-
-        .header {
-            position: relative;
             text-align: center;
-            color: white;
-            padding: 100px 20px;
-            background: url('https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/296988ed-ff94-402d-af3b-38c53a5d7ba1/-/format/webp/-/resize/1300x/') no-repeat center center;
-            background-size: cover;
         }
 
-        .header h1 {
-            font-size: 3em;
-            color: #fff;
-            text-shadow: 2px 2px 4px #000;
-            border: 3px solid #000;
-            display: inline-block;
-            padding: 10px 20px;
-        }
-
-        .content {
-            max-width: 900px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
-        .content h2 {
+        h1 {
             font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .content p {
-            font-size: 1.1em;
-            line-height: 1.6em;
-            color: #333;
-        }
-
-        .audio-section {
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .audio-section a {
+            margin-top: 30px;
+            color: #000;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+            padding: 10px;
             display: inline-block;
-            margin-bottom: 20px;
-            padding: 12px 25px;
-            background-color: #0077cc;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: background 0.3s;
+            border: 2px solid black;
+            background-color: rgba(255, 255, 255, 0.5);
         }
 
-        .audio-section a:hover {
-            background-color: #005fa3;
+        .audio-container {
+            margin: 20px auto;
         }
 
-        .audio-section img {
-            max-width: 100%;
+        .photo-container img {
+            max-width: 90%;
             height: auto;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
-        footer {
-            text-align: center;
-            margin: 40px 0;
-            font-size: 0.9em;
-            color: #777;
+        audio {
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>Audio Version of Vaporetto Stop Santa Marta</h1>
+    <h1>Аудио версия сайта об информации Vaporetto Stop Santa Marta</h1>
+
+    <div class="audio-container">
+        <audio controls>
+            <source src="https://drive.google.com/uc?export=download&id=1dSjO6mHMKSOQD0ghkdVPPuRr3Uhu-inV" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
     </div>
 
-    <div class="content">
-        <p>The Vaporetto stop at Santa Marta is a key point in Venice’s water transport system. Historically, this area has been a hub for both locals and tourists traveling along the Grand Canal. Here you can explore Venice while listening to an audio guide for a richer experience.</p>
+    <div class="photo-container">
+        <img src="https://europeforvisitors.com/venice/images/actv/s-marta-325-4099133.jpg" alt="Vaporetto Stop Santa Marta">
     </div>
 
-    <div class="audio-section">
-        <a href="https://drive.google.com/file/d/1dSjO6mHMKSOQD0ghkdVPPuRr3Uhu-inV/view?usp=sharing" target="_blank">Listen to Audio Guide</a>
-        <img src="https://europeforvisitors.com/venice/images/actv/s-marta-325-4099133.jpg" alt="Santa Marta Vaporetto Stop">
-    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Guide</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
 
-    <footer>
-        &copy; 2026 Your Name or Project
-    </footer>
+        h1 {
+            font-size: 3em;
+            color: #222;
+            text-align: center;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+        }
+
+        .audio-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #0077cc;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .audio-button:hover {
+            background-color: #005fa3;
+            transform: scale(1.05);
+        }
+
+        .audio-img {
+            margin-top: 30px;
+            max-width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Audio Guide</h1>
+
+    <a class="audio-button" href="https://drive.google.com/file/d/1dSjO6mHMKSOQD0ghkdVPPuRr3Uhu-inV/view?usp=sharing" target="_blank">
+        Listen Now
+    </a>
+
+    <img class="audio-img" src="https://europeforvisitors.com/venice/images/actv/s-marta-325-4099133.jpg" alt="Santa Marta Vaporetto Stop">
 
 </body>
 </html>

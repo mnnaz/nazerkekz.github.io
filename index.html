@@ -3,111 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Disney Project</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#fff9f5;
     }
 
-    .hero {
-      height: 100vh;
+    .hero{
+      height:100vh;
+
       background-image:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("IMG_0511.webp");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 30px;
+      linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+      ),
+      url("IMG_0511.webp");
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      text-align:center;
+
+      padding:30px;
     }
 
-    .hero h1 {
-      color: white;
-      font-size: 56px;
-      line-height: 1.3;
-      text-shadow: 2px 2px 15px black;
+    .hero h1{
+      color:white;
+
+      font-size:56px;
+
+      line-height:1.3;
+
+      text-shadow:2px 2px 15px black;
     }
+
+    .content-section{
+      padding:80px 10%;
+    }
+
+    .text-card{
+      background:white;
+
+      padding:35px;
+
+      margin-bottom:30px;
+
+      border-radius:25px;
+
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .text-card h2{
+      color:#1e3a5f;
+
+      font-size:34px;
+
+      margin-bottom:20px;
+    }
+
+    .text-card p{
+      color:#333;
+
+      font-size:18px;
+
+      line-height:1.8;
+    }
+
+    .research-card{
+      background:#1e3a5f;
+    }
+
+    .research-card h2,
+    .research-card p{
+      color:white;
+    }
+
   </style>
 </head>
 
 <body>
+
   <section class="hero">
+
     <h1>
       Computational Analysis of Emotional Language and<br>
       Female Representation in Disney Animated Films
     </h1>
+
   </section>
+
+  <section class="content-section">
+
+    <div class="text-card">
+
+      <h2>Abstract</h2>
+
+      <p>
+        This study explores emotional language and female representation
+        in Disney animated films through computational text analysis.
+        The project examines five protagonists:
+        Snow White, Cinderella, Mulan, Elsa, and Mirabel.
+      </p>
+
+    </div>
+
+    <div class="text-card">
+
+      <h2>Introduction</h2>
+
+      <p>
+        Disney female protagonists have shaped cultural representations
+        of femininity across generations.
+        Earlier heroines reflect romantic idealism and emotional softness,
+        while modern protagonists increasingly emphasize independence,
+        identity, and emotional complexity.
+      </p>
+
+    </div>
+
+    <div class="text-card research-card">
+
+      <h2>Research Question</h2>
+
+      <p>
+        How has emotional language and female representation evolved
+        in Disney female protagonists over time?
+      </p>
+
+    </div>
+
+  </section>
+
 </body>
 </html>
-<section class="project-info">
-
-  <div class="info-card">
-    <h2>Abstract</h2>
-    <p>
-      This study explores emotional language and female representation in Disney animated films
-      through computational text analysis. The project examines five protagonists:
-      Snow White, Cinderella, Mulan, Elsa, and Mirabel.
-    </p>
-    <p>
-      The results reveal a historical shift from romantic femininity toward identity,
-      autonomy, and emotional complexity.
-    </p>
-  </div>
-
-  <div class="info-card">
-    <h2>Introduction</h2>
-    <p>
-      Disney female protagonists have significantly influenced cultural representations
-      of femininity across generations. Earlier heroines were associated with romantic
-      idealism and emotional softness, while modern protagonists increasingly emphasize
-      independence, identity, and psychological complexity.
-    </p>
-  </div>
-
-  <div class="info-card research">
-    <h2>Research Question</h2>
-    <p>
-      How has emotional language and female representation evolved in Disney female
-      protagonists over time?
-    </p>
-  </div>
-
-</section>
-.project-info {
-  background: #fff9f5;
-  padding: 80px 10%;
-  display: grid;
-  gap: 30px;
-}
-
-.info-card {
-  background: white;
-  padding: 40px;
-  border-radius: 25px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.info-card h2 {
-  color: #1e3a5f;
-  font-size: 34px;
-  margin-bottom: 20px;
-}
-
-.info-card p {
-  color: #333;
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-.research {
-  background: #1e3a5f;
-}
-
-.research h2,
-.research p {
-  color: white;
-}

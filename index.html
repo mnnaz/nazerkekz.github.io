@@ -39,11 +39,8 @@
 
     .hero h1{
       color:white;
-
       font-size:56px;
-
       line-height:1.3;
-
       text-shadow:2px 2px 15px black;
     }
 
@@ -55,30 +52,22 @@
 
     .text-card{
       background:white;
-
       padding:35px;
-
       margin-bottom:25px;
-
       border-radius:25px;
-
       box-shadow:0 10px 30px rgba(0,0,0,0.08);
     }
 
     .text-card h2{
       color:#1e3a5f;
-
       font-size:34px;
-
       margin-bottom:18px;
     }
 
     .text-card p,
     .text-card li{
       color:#333;
-
       font-size:18px;
-
       line-height:1.8;
     }
 
@@ -112,21 +101,15 @@
     .figure-block{
       display:grid;
       grid-template-columns:1.35fr 0.65fr;
-
       gap:35px;
-
       align-items:center;
-
       margin-bottom:55px;
     }
 
     .figure-card{
       background:#fff9f5;
-
       padding:18px;
-
       border-radius:25px;
-
       box-shadow:0 12px 30px rgba(0,0,0,0.12);
     }
 
@@ -138,11 +121,8 @@
 
     .figure-text{
       background:#fff9f5;
-
       padding:28px;
-
       border-radius:25px;
-
       box-shadow:0 10px 25px rgba(0,0,0,0.08);
     }
 
@@ -166,13 +146,82 @@
 
     .sticker-box img{
       width:135px;
-
       border-radius:20px;
-
       transform:rotate(-5deg);
-
       box-shadow:0 10px 25px rgba(0,0,0,0.15);
     }
+
+    /* FINAL SECTION */
+
+    .final-section{
+      padding:80px 8%;
+      background:#fff9f5;
+    }
+
+    .final-card{
+      background:white;
+      padding:35px;
+      margin-bottom:30px;
+      border-radius:25px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .final-card h2{
+      color:#1e3a5f;
+      font-size:34px;
+      margin-bottom:18px;
+    }
+
+    .final-card p{
+      color:#333;
+      font-size:18px;
+      line-height:1.8;
+    }
+
+    /* CONCLUSION HERO */
+
+    .conclusion-hero{
+      position:relative;
+      height:90vh;
+
+      background-image:
+      linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+      ),
+      url("IMG_0525.webp");
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+
+      text-align:center;
+
+      padding:40px;
+    }
+
+    .conclusion-content{
+      max-width:900px;
+    }
+
+    .conclusion-content h2{
+      color:white;
+      font-size:54px;
+      margin-bottom:30px;
+      text-shadow:2px 2px 15px black;
+    }
+
+    .conclusion-content p{
+      color:white;
+      font-size:22px;
+      line-height:1.9;
+      text-shadow:2px 2px 12px black;
+    }
+
+    /* MOBILE */
 
     @media(max-width:900px){
 
@@ -182,6 +231,14 @@
 
       .figure-block{
         grid-template-columns:1fr;
+      }
+
+      .conclusion-content h2{
+        font-size:38px;
+      }
+
+      .conclusion-content p{
+        font-size:18px;
       }
 
     }
@@ -207,65 +264,50 @@
   <section class="content-section">
 
     <div class="text-card">
-
       <h2>Abstract</h2>
-
       <p>
         This study explores emotional language and female representation
         in Disney animated films through computational text analysis.
         The project examines five protagonists:
         Snow White, Cinderella, Mulan, Elsa, and Mirabel.
       </p>
-
     </div>
 
     <div class="text-card">
-
       <h2>Introduction</h2>
-
       <p>
         Disney female protagonists have shaped cultural representations
         of femininity across generations. Earlier heroines reflect romantic
         idealism and emotional softness, while modern protagonists increasingly
         emphasize independence, identity, and emotional complexity.
       </p>
-
     </div>
 
     <div class="text-card research-card">
-
       <h2>Research Question</h2>
-
       <p>
         How has emotional language and female representation evolved
         in Disney female protagonists over time?
       </p>
-
     </div>
 
     <div class="text-card">
-
       <h2>Data</h2>
-
       <p>
         The dataset consists of subtitle corpora from five Disney animated films
         released between 1937 and 2021. The analysis focuses on Snow White,
         Cinderella, Mulan, Elsa, and Mirabel.
       </p>
-
     </div>
 
     <div class="text-card">
-
       <h2>Methodology</h2>
-
       <ul>
         <li>Sentiment Analysis using VADER</li>
         <li>Thematic Keyword Analysis</li>
         <li>Lexical Frequency Analysis</li>
         <li>Bigram Analysis</li>
       </ul>
-
     </div>
 
   </section>
@@ -283,11 +325,11 @@
       <div>
 
         <div class="sticker-box">
-          <img src="IMG_0515.webp" alt="Sticker">
+          <img src="IMG_0515.webp">
         </div>
 
         <div class="figure-card">
-          <img src="IMG_0514.png" alt="Figure 1">
+          <img src="IMG_0514.png">
         </div>
 
       </div>
@@ -313,11 +355,11 @@
       <div>
 
         <div class="sticker-box">
-          <img src="IMG_0517.jpeg" alt="Sticker">
+          <img src="IMG_0517.jpeg">
         </div>
 
         <div class="figure-card">
-          <img src="IMG_0516.png" alt="Figure 2">
+          <img src="IMG_0516.png">
         </div>
 
       </div>
@@ -348,11 +390,11 @@
       <div>
 
         <div class="sticker-box">
-          <img src="IMG_0520.png" alt="Sticker">
+          <img src="IMG_0520.png">
         </div>
 
         <div class="figure-card">
-          <img src="IMG_0519.png" alt="Figure 3">
+          <img src="IMG_0519.png">
         </div>
 
       </div>
@@ -366,11 +408,6 @@
           while Elsa presents the highest negative sentiment score (0.144).
         </p>
 
-        <p>
-          Cinderella also shows strong emotional positivity (0.229),
-          whereas Mulan demonstrates a more balanced emotional profile.
-        </p>
-
       </div>
 
     </div>
@@ -382,11 +419,11 @@
       <div>
 
         <div class="sticker-box">
-          <img src="IMG_0522.jpeg" alt="Sticker">
+          <img src="IMG_0522.jpeg">
         </div>
 
         <div class="figure-card">
-          <img src="IMG_0521.png" alt="Figure 4">
+          <img src="IMG_0521.png">
         </div>
 
       </div>
@@ -416,11 +453,11 @@
       <div>
 
         <div class="sticker-box">
-          <img src="IMG_0524.png" alt="Sticker">
+          <img src="IMG_0524.png">
         </div>
 
         <div class="figure-card">
-          <img src="IMG_0523.png" alt="Figure 5">
+          <img src="IMG_0523.png">
         </div>
 
       </div>
@@ -430,24 +467,69 @@
         <h3>Figure 5. Historical Evolution of Disney Female Representation</h3>
 
         <p>
-          Figure 5A shows that Mirabel has the highest compound sentiment
-          score (0.239), while Elsa presents the only negative compound
-          score (-0.036).
+          Mirabel has the highest compound sentiment score (0.239),
+          while Elsa presents the only negative compound score (-0.036).
         </p>
 
         <p>
-          Figure 5B illustrates the historical evolution of Disney female
-          protagonists from 1937 to 2021.
-        </p>
-
-        <p>
-          Figure 5C demonstrates emotional theme connections,
-          where earlier protagonists are associated with romance
-          and idealized femininity, while later characters emphasize
-          identity, emotional control, and family belonging.
+          The figure demonstrates the historical transformation
+          from romantic femininity toward identity,
+          emotional complexity, and family belonging.
         </p>
 
       </div>
+
+    </div>
+
+  </section>
+
+  <!-- FINAL SECTION -->
+
+  <section class="final-section">
+
+    <div class="final-card">
+
+      <h2>Discussion</h2>
+
+      <p>
+        Earlier Disney protagonists are associated with romance,
+        domesticity, and emotional passivity, while later characters
+        increasingly emphasize individuality, emotional autonomy,
+        and psychological complexity.
+      </p>
+
+    </div>
+
+    <div class="final-card">
+
+      <h2>Limitations</h2>
+
+      <p>
+        The analysis is based on subtitle corpora rather than official scripts
+        and includes only five protagonists, meaning that a larger dataset
+        could provide broader insights.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- CONCLUSION -->
+
+  <section class="conclusion-hero">
+
+    <div class="conclusion-content">
+
+      <h2>Conclusion</h2>
+
+      <p>
+        The study demonstrates a clear historical evolution in Disney female
+        representation from romantic idealism and emotional softness toward
+        identity, autonomy, emotional complexity, and interpersonal support.
+        Overall, the project shows how computational text analysis can contribute
+        to media and cultural studies through the exploration of emotional
+        language and cultural transformation across generations.
+      </p>
 
     </div>
 

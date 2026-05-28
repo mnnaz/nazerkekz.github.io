@@ -3,35 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Disney Project</title>
 
   <style>
+
     body{
       margin:0;
       font-family:Arial, sans-serif;
       background:#fff9f5;
     }
 
+    /* HERO */
+
     .hero{
       height:100vh;
+
       background-image:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("IMG_0511.webp");
+      linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+      ),
+      url("IMG_0511.webp");
+
       background-size:cover;
       background-position:center;
+
       display:flex;
       justify-content:center;
       align-items:center;
+
       text-align:center;
+
       padding:30px;
     }
 
     .hero h1{
       color:white;
+
       font-size:56px;
+
       line-height:1.3;
+
       text-shadow:2px 2px 15px black;
     }
+
+    /* CONTENT */
 
     .content-section{
       padding:80px 10%;
@@ -39,22 +56,30 @@
 
     .text-card{
       background:white;
+
       padding:35px;
+
       margin-bottom:30px;
+
       border-radius:25px;
+
       box-shadow:0 10px 30px rgba(0,0,0,0.08);
     }
 
     .text-card h2{
       color:#1e3a5f;
+
       font-size:34px;
+
       margin-bottom:20px;
     }
 
     .text-card p,
     .text-card li{
       color:#333;
+
       font-size:18px;
+
       line-height:1.8;
     }
 
@@ -67,30 +92,43 @@
       color:white;
     }
 
+    .text-card ul{
+      padding-left:25px;
+      margin-top:15px;
+    }
+
+    /* RESULTS */
+
     .results-section{
-      padding:90px 10%;
+      padding:100px 10%;
       background:white;
     }
 
     .results-section h2{
       font-size:42px;
       color:#1e3a5f;
-      margin-bottom:50px;
       text-align:center;
+      margin-bottom:60px;
     }
 
     .figure-block{
       display:grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap:40px;
+      grid-template-columns:1.1fr 0.9fr;
+
+      gap:50px;
+
       align-items:center;
-      margin-bottom:90px;
+
+      margin-bottom:100px;
     }
 
     .figure-card{
       background:#fff9f5;
+
       padding:25px;
+
       border-radius:25px;
+
       box-shadow:0 12px 30px rgba(0,0,0,0.12);
     }
 
@@ -102,21 +140,25 @@
 
     .figure-text{
       background:#fff9f5;
+
       padding:35px;
+
       border-radius:25px;
-      box-shadow:0 12px 30px rgba(0,0,0,0.08);
+
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
     }
 
     .figure-text h3{
       color:#1e3a5f;
-      font-size:26px;
+      font-size:28px;
       margin-bottom:20px;
     }
 
     .figure-text p{
       color:#444;
       font-size:18px;
-      line-height:1.8;
+      line-height:1.9;
+      margin-bottom:18px;
     }
 
     .sticker-box{
@@ -126,12 +168,16 @@
 
     .sticker-box img{
       width:160px;
+
       border-radius:20px;
+
       transform:rotate(-6deg);
+
       box-shadow:0 10px 25px rgba(0,0,0,0.15);
     }
 
     @media(max-width:900px){
+
       .hero h1{
         font-size:38px;
       }
@@ -139,33 +185,46 @@
       .figure-block{
         grid-template-columns:1fr;
       }
+
     }
+
   </style>
 </head>
 
 <body>
 
+  <!-- HERO -->
+
   <section class="hero">
+
     <h1>
       Computational Analysis of Emotional Language and<br>
       Female Representation in Disney Animated Films
     </h1>
+
   </section>
+
+  <!-- CONTENT -->
 
   <section class="content-section">
 
     <div class="text-card">
+
       <h2>Abstract</h2>
+
       <p>
         This study explores emotional language and female representation
         in Disney animated films through computational text analysis.
         The project examines five protagonists:
         Snow White, Cinderella, Mulan, Elsa, and Mirabel.
       </p>
+
     </div>
 
     <div class="text-card">
+
       <h2>Introduction</h2>
+
       <p>
         Disney female protagonists have shaped cultural representations
         of femininity across generations.
@@ -173,94 +232,171 @@
         while modern protagonists increasingly emphasize independence,
         identity, and emotional complexity.
       </p>
+
     </div>
 
     <div class="text-card research-card">
+
       <h2>Research Question</h2>
+
       <p>
         How has emotional language and female representation evolved
         in Disney female protagonists over time?
       </p>
+
     </div>
 
     <div class="text-card">
+
       <h2>Data</h2>
+
       <p>
         The dataset consists of subtitle corpora from five Disney animated films
         released between 1937 and 2021.
       </p>
+
       <p>
-        The analysis focuses on Snow White, Cinderella, Mulan, Elsa, and Mirabel.
+        The analysis focuses on Snow White, Cinderella,
+        Mulan, Elsa, and Mirabel.
       </p>
+
     </div>
 
     <div class="text-card">
+
       <h2>Methodology</h2>
+
       <ul>
         <li>Sentiment Analysis using VADER</li>
         <li>Thematic Keyword Analysis</li>
         <li>Lexical Frequency Analysis</li>
         <li>Bigram Analysis</li>
       </ul>
+
       <p>
         These methods were used to identify emotional patterns,
         recurring themes, and historical changes in Disney female representation.
       </p>
+
     </div>
 
   </section>
+
+  <!-- RESULTS -->
 
   <section class="results-section">
 
     <h2>Results</h2>
 
+    <!-- FIGURE 1 -->
+
     <div class="figure-block">
 
       <div class="figure-card">
-        <img src="IMG_0514.png" alt="Figure 1 Sentiment Analysis">
+        <img src="IMG_0514.png" alt="Figure 1">
       </div>
 
       <div>
+
         <div class="figure-text">
+
           <h3>Figure 1. Evolution of Emotional Language</h3>
+
           <p>
             The figure compares sentiment scores across Snow White,
             Cinderella, Mulan, Elsa, and Mirabel.
+          </p>
+
+          <p>
             Earlier protagonists demonstrate emotionally positive and romantic language,
             while later characters increasingly reflect identity,
             emotional conflict, and psychological complexity.
           </p>
+
         </div>
 
         <div class="sticker-box">
-          <img src="IMG_0515.webp" alt="Disney sticker">
+          <img src="IMG_0515.webp" alt="Sticker">
         </div>
+
       </div>
 
     </div>
 
+    <!-- FIGURE 2 -->
+
+    <div class="figure-block">
+
+      <div>
+
+        <div class="sticker-box" style="margin-bottom:20px;">
+          <img src="IMG_0517.jpeg" alt="Sticker">
+        </div>
+
+        <div class="figure-card">
+          <img src="IMG_0516.png" alt="Figure 2">
+        </div>
+
+      </div>
+
+      <div class="figure-text">
+
+        <h3>Figure 2. Theme Evolution</h3>
+
+        <p>
+          Snow White and Cinderella demonstrate the highest romance
+          and domesticity scores (9–10), reflecting traditional femininity.
+        </p>
+
+        <p>
+          Mulan shows stronger identity and independence themes (8–9),
+          while Elsa presents the highest emotional control score (10).
+        </p>
+
+        <p>
+          Mirabel demonstrates the strongest family-oriented representation
+          with the highest family score (10).
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- FIGURE 3 -->
+
     <div class="figure-block">
 
       <div class="figure-card">
-        <img src="IMG_0516.png" alt="Figure 2 Theme Heatmap">
+        <img src="IMG_0519.png" alt="Figure 3">
       </div>
 
       <div>
+
         <div class="figure-text">
-          <h3>Figure 2. Theme Evolution</h3>
+
+          <h3>Figure 3. Positive vs. Negative Emotional Language</h3>
+
           <p>
-            Snow White and Cinderella demonstrate the highest romance
-            and domesticity scores (9–10), reflecting traditional femininity.
-            Mulan shows stronger identity and independence themes (8–9),
-            while Elsa presents the highest emotional control score (10).
-            Mirabel demonstrates the strongest family-oriented representation
-            with the highest family score (10).
+            Mirabel demonstrates the highest positive sentiment score (0.284),
+            while Elsa presents the highest negative sentiment score (0.144).
           </p>
+
+          <p>
+            Cinderella also shows strong emotional positivity (0.229),
+            whereas Mulan demonstrates a more balanced emotional profile.
+          </p>
+
+          <p>
+            Overall, the figure illustrates the shift toward greater emotional
+            complexity in later Disney protagonists.
+          </p>
+
         </div>
 
         <div class="sticker-box">
-          <img src="IMG_0517.jpeg" alt="Disney sticker">
+          <img src="IMG_0520.png" alt="Sticker">
         </div>
+
       </div>
 
     </div>

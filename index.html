@@ -3,264 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Disney Female Representation Analysis</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Disney Project</title>
 
   <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
 
-    body{
-      font-family:'Poppins', sans-serif;
-      background:#fff9f5;
-      color:#1e3a5f;
+    .hero {
+      height: 100vh;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("IMG_0511.webp");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
     }
 
-    .hero{
-      height:100vh;
-
-      background:
-      linear-gradient(
-        rgba(15,15,35,0.55),
-        rgba(15,15,35,0.55)
-      ),
-      url("IMG_0511.webp");
-
-      background-size:cover;
-      background-position:center;
-
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-
-      padding:40px;
+    .hero h1 {
+      color: white;
+      font-size: 56px;
+      line-height: 1.3;
+      text-shadow: 2px 2px 15px black;
     }
-
-    .hero-content{
-      max-width:1000px;
-    }
-
-    .hero h1{
-      font-family:'Playfair Display', serif;
-
-      font-size:60px;
-      line-height:1.3;
-
-      color:white;
-
-      margin-bottom:30px;
-
-      text-shadow:2px 2px 20px rgba(0,0,0,0.5);
-    }
-
-    .hero p{
-      font-size:22px;
-      color:#f5f5f5;
-      line-height:1.8;
-
-      max-width:800px;
-      margin:auto;
-    }
-
-    .button{
-      display:inline-block;
-
-      margin-top:40px;
-
-      padding:16px 36px;
-
-      background:#f6d6e6;
-      color:#1e3a5f;
-
-      text-decoration:none;
-
-      border-radius:40px;
-
-      font-weight:600;
-
-      transition:0.3s;
-    }
-
-    .button:hover{
-      background:white;
-      transform:scale(1.05);
-    }
-
-    .about{
-      padding:100px 10%;
-      background:white;
-    }
-
-    .about h2{
-      font-family:'Playfair Display', serif;
-      font-size:42px;
-      margin-bottom:30px;
-      text-align:center;
-    }
-
-    .about p{
-      font-size:18px;
-      line-height:1.9;
-      max-width:1000px;
-      margin:auto;
-      text-align:center;
-    }
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-      gap:30px;
-
-      padding:100px 10%;
-      background:#fff9f5;
-    }
-
-    .card{
-      background:white;
-
-      padding:35px;
-
-      border-radius:25px;
-
-      box-shadow:0 10px 30px rgba(0,0,0,0.08);
-
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-10px);
-    }
-
-    .card h3{
-      font-family:'Playfair Display', serif;
-
-      margin-bottom:20px;
-
-      color:#1e3a5f;
-    }
-
-    .card p{
-      line-height:1.7;
-    }
-
-    footer{
-      background:#1e3a5f;
-      color:white;
-
-      text-align:center;
-
-      padding:30px;
-    }
-
   </style>
 </head>
 
 <body>
-
   <section class="hero">
-
-    <div class="hero-content">
-
-      <h1>
-        Computational Analysis of Emotional Language and
-        Female Representation in Disney Animated Films
-      </h1>
-
-      <p>
-        A Digital Humanities project exploring emotional language,
-        sentiment analysis, and female representation in Disney animated films.
-      </p>
-
-      <a href="#about" class="button">
-        Explore Project
-      </a>
-
-    </div>
-
+    <h1>
+      Computational Analysis of Emotional Language and<br>
+      Female Representation in Disney Animated Films
+    </h1>
   </section>
-
-  <section class="about" id="about">
-
-    <h2>About the Project</h2>
-
-    <p>
-      This project examines the evolution of emotional language and female representation
-      in Disney animated films through computational text analysis.
-
-      The analysis focuses on five protagonists:
-      Snow White, Cinderella, Mulan, Elsa, and Mirabel.
-
-      Using Python-based methods such as sentiment analysis,
-      lexical frequency analysis, and thematic keyword analysis,
-      the project explores how Disney heroines evolved from traditional romantic femininity
-      toward identity, autonomy, emotional complexity, and interpersonal support.
-    </p>
-
-  </section>
-
-  <section class="cards">
-
-    <div class="card">
-      <h3>Snow White</h3>
-
-      <p>
-        Traditional femininity, emotional softness,
-        romantic dreaming, and domesticity.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Cinderella</h3>
-
-      <p>
-        Hope, fantasy, emotional patience,
-        and romantic idealism.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Mulan</h3>
-
-      <p>
-        Honor, courage, resistance,
-        responsibility, and identity.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Elsa</h3>
-
-      <p>
-        Emotional control, repression,
-        self-acceptance, and independence.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Mirabel</h3>
-
-      <p>
-        Family belonging, emotional support,
-        and collective identity.
-      </p>
-    </div>
-
-  </section>
-
-  <footer>
-    Digital Humanities Project | Ca' Foscari University
-  </footer>
-
 </body>
 </html>

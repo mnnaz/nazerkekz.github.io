@@ -14,6 +14,8 @@
       background:#fff9f5;
     }
 
+    /* HERO SECTION */
+
     .hero{
       height:100vh;
 
@@ -45,6 +47,8 @@
 
       text-shadow:2px 2px 15px black;
     }
+
+    /* TEXT SECTIONS */
 
     .content-section{
       padding:80px 10%;
@@ -98,10 +102,80 @@
       color:#333;
     }
 
+    /* RESULTS SECTION */
+
+    .results-section{
+      display:flex;
+
+      justify-content:space-between;
+      align-items:center;
+
+      gap:60px;
+
+      padding:100px 10%;
+
+      background:white;
+    }
+
+    .results-text{
+      flex:1;
+    }
+
+    .results-text h2{
+      font-size:42px;
+      color:#1e3a5f;
+      margin-bottom:25px;
+    }
+
+    .results-text h3{
+      font-size:26px;
+      color:#333;
+      margin-bottom:20px;
+      line-height:1.4;
+    }
+
+    .results-text p{
+      font-size:18px;
+      line-height:1.9;
+      color:#444;
+      margin-bottom:18px;
+    }
+
+    .results-image{
+      flex:1;
+
+      position:relative;
+
+      display:flex;
+      justify-content:center;
+    }
+
+    .main-figure{
+      width:100%;
+      max-width:650px;
+
+      border-radius:25px;
+
+      box-shadow:0 15px 35px rgba(0,0,0,0.15);
+    }
+
+    .sticker{
+      position:absolute;
+
+      width:130px;
+
+      bottom:-30px;
+      right:-20px;
+
+      transform:rotate(-10deg);
+    }
+
   </style>
 </head>
 
 <body>
+
+  <!-- HERO -->
 
   <section class="hero">
 
@@ -111,6 +185,8 @@
     </h1>
 
   </section>
+
+  <!-- TEXT CONTENT -->
 
   <section class="content-section">
 
@@ -162,13 +238,8 @@
       </p>
 
       <p>
-        The analysis focuses on five protagonists:
-        Snow White, Cinderella, Mulan, Elsa, and Mirabel.
-      </p>
-
-      <p>
-        Subtitle files were processed in Python, and non-linguistic elements
-        were removed during preprocessing.
+        The analysis focuses on Snow White, Cinderella,
+        Mulan, Elsa, and Mirabel.
       </p>
 
     </div>
@@ -176,10 +247,6 @@
     <div class="text-card">
 
       <h2>Methodology</h2>
-
-      <p>
-        The analysis was conducted in Python using computational text analysis methods.
-      </p>
 
       <ul>
         <li>Sentiment Analysis using VADER</li>
@@ -192,6 +259,47 @@
         These methods were used to identify emotional patterns,
         recurring themes, and historical changes in Disney female representation.
       </p>
+
+    </div>
+
+  </section>
+
+  <!-- RESULTS -->
+
+  <section class="results-section">
+
+    <div class="results-text">
+
+      <h2>Results</h2>
+
+      <h3>
+        Figure 1. Evolution of Emotional Language in Disney Female Protagonists
+      </h3>
+
+      <p>
+        The figure compares sentiment scores across Snow White,
+        Cinderella, Mulan, Elsa, and Mirabel.
+      </p>
+
+      <p>
+        Earlier protagonists demonstrate emotionally positive and romantic language,
+        while later characters increasingly reflect identity,
+        emotional conflict, and psychological complexity.
+      </p>
+
+      <p>
+        Elsa shows the highest negative sentiment,
+        whereas Mirabel demonstrates the highest emotional positivity
+        and family-oriented language.
+      </p>
+
+    </div>
+
+    <div class="results-image">
+
+      <img src="IMG_0514.png" class="main-figure">
+
+      <img src="IMG_0515.webp" class="sticker">
 
     </div>
 

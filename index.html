@@ -1,197 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaporetto Stop Santa Marta</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        .header {
-            position: relative;
-            text-align: center;
-            color: #fff;
-            background-image: url('https://7d9e88a8-f178-4098-bea5-48d960920605.selcdn.net/296988ed-ff94-402d-af3b-38c53a5d7ba1/-/format/webp/-/resize/1300x/');
-            background-size: cover;
-            background-position: center;
-            height: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+  <title>Disney Female Representation Analysis</title>
 
-        .header h1 {
-            font-size: 3em;
-            background-color: rgba(0,0,0,0.5);
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-shadow: 2px 2px 4px #000;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .content {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-        .content h2 {
-            color: #333;
-            margin-top: 0;
-        }
+  <style>
 
-        .content p {
-            color: #444;
-            font-size: 1.1em;
-        }
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#fff9f5;
+      color:#1e3a5f;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    .hero{
+      height:100vh;
+
+      background:
+      linear-gradient(
+        rgba(15,15,35,0.55),
+        rgba(15,15,35,0.55)
+      ),
+      url("IMG_0511.webp");
+
+      background-size:cover;
+      background-position:center;
+
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+
+      padding:40px;
+    }
+
+    .hero-content{
+      max-width:1000px;
+    }
+
+    .hero h1{
+      font-family:'Playfair Display', serif;
+
+      font-size:60px;
+      line-height:1.3;
+
+      color:white;
+
+      margin-bottom:30px;
+
+      text-shadow:2px 2px 20px rgba(0,0,0,0.5);
+    }
+
+    .hero p{
+      font-size:22px;
+      color:#f5f5f5;
+      line-height:1.8;
+
+      max-width:800px;
+      margin:auto;
+    }
+
+    .button{
+      display:inline-block;
+
+      margin-top:40px;
+
+      padding:16px 36px;
+
+      background:#f6d6e6;
+      color:#1e3a5f;
+
+      text-decoration:none;
+
+      border-radius:40px;
+
+      font-weight:600;
+
+      transition:0.3s;
+    }
+
+    .button:hover{
+      background:white;
+      transform:scale(1.05);
+    }
+
+    .about{
+      padding:100px 10%;
+      background:white;
+    }
+
+    .about h2{
+      font-family:'Playfair Display', serif;
+      font-size:42px;
+      margin-bottom:30px;
+      text-align:center;
+    }
+
+    .about p{
+      font-size:18px;
+      line-height:1.9;
+      max-width:1000px;
+      margin:auto;
+      text-align:center;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+      gap:30px;
+
+      padding:100px 10%;
+      background:#fff9f5;
+    }
+
+    .card{
+      background:white;
+
+      padding:35px;
+
+      border-radius:25px;
+
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h3{
+      font-family:'Playfair Display', serif;
+
+      margin-bottom:20px;
+
+      color:#1e3a5f;
+    }
+
+    .card p{
+      line-height:1.7;
+    }
+
+    footer{
+      background:#1e3a5f;
+      color:white;
+
+      text-align:center;
+
+      padding:30px;
+    }
+
+  </style>
 </head>
+
 <body>
 
-<div class="header">
-    <h1>Vaporetto Stop Santa Marta</h1>
-</div>
+  <section class="hero">
 
-<div class="content">
-    <h2>Info about Santa Marta</h2>
+    <div class="hero-content">
+
+      <h1>
+        Computational Analysis of Emotional Language and
+        Female Representation in Disney Animated Films
+      </h1>
+
+      <p>
+        A Digital Humanities project exploring emotional language,
+        sentiment analysis, and female representation in Disney animated films.
+      </p>
+
+      <a href="#about" class="button">
+        Explore Project
+      </a>
+
+    </div>
+
+  </section>
+
+  <section class="about" id="about">
+
+    <h2>About the Project</h2>
+
     <p>
-        Santa Marta is near a port entrance at the southwest corner of Venice's southwest center, on a small canal that runs inland from the larger Giudecca Canal used by cruise ships and water buses.
+      This project examines the evolution of emotional language and female representation
+      in Disney animated films through computational text analysis.
+
+      The analysis focuses on five protagonists:
+      Snow White, Cinderella, Mulan, Elsa, and Mirabel.
+
+      Using Python-based methods such as sentiment analysis,
+      lexical frequency analysis, and thematic keyword analysis,
+      the project explores how Disney heroines evolved from traditional romantic femininity
+      toward identity, autonomy, emotional complexity, and interpersonal support.
     </p>
-    <p>
-        This ACTV stop is convenient if you're exploring Venice from a river vessel or other small ship at the Santa Marta pier, which is just to the west of the San Basilio Cruise Terminal.
-    </p>
-    <p>
-        The Santa Marta station is served by ACTV Lines 4.1, 4.2, 5.1, 5.2, 6 public water buses.
-    </p>
-    <p>
-        We aren't aware of any hotels in Santa Marta's immediate vicinity, but the Hotel Tiziano (three stars) isn't too far away.
-    </p>
-    <p>
-        Note: This station does not have a ticket booth or vending machine, so <a href="https://europeforvisitors.com/venice/actv/s-marta.htm" target="_blank">here's what to do</a> if you need to board a water bus without a valid ACTV ticket or Tourist Travel Card.
-    </p>
-</div>
 
-</body>
-</html> 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Santa Marta Vaporetto Stop</title>
+  </section>
 
-<style>
-body{
-  font-family: Arial, sans-serif;
-  background:#f4f4f4;
-  text-align:center;
-  padding:40px;
-}
+  <section class="cards">
 
-h1{
-  font-size:40px;
-}
+    <div class="card">
+      <h3>Snow White</h3>
 
-.section{
-  margin-top:50px;
-}
+      <p>
+        Traditional femininity, emotional softness,
+        romantic dreaming, and domesticity.
+      </p>
+    </div>
 
-a{
-  font-size:20px;
-  color:#0066cc;
-  text-decoration:none;
-}
+    <div class="card">
+      <h3>Cinderella</h3>
 
-a:hover{
-  text-decoration:underline;
-}
-</style>
+      <p>
+        Hope, fantasy, emotional patience,
+        and romantic idealism.
+      </p>
+    </div>
 
-</head>
+    <div class="card">
+      <h3>Mulan</h3>
 
-<body>
+      <p>
+        Honor, courage, resistance,
+        responsibility, and identity.
+      </p>
+    </div>
 
-<h1>Santa Marta Vaporetto Stop</h1>
+    <div class="card">
+      <h3>Elsa</h3>
 
-<div class="section">
-<p>
-The Vaporetto stop at Santa Marta is a key point in Venice’s water transport system.
-</p>
-</div>
+      <p>
+        Emotional control, repression,
+        self-acceptance, and independence.
+      </p>
+    </div>
 
-<div class="section">
-<h2>AUDIO GUIDE</h2>
+    <div class="card">
+      <h3>Mirabel</h3>
 
-<a href="https://drive.google.com/file/d/1dSjO6mHMKSOQD0ghkdVPPuRr3Uhu-inV/view?usp=sharing" target="_blank">
-▶ Click here to listen to the audio guide
-</a>
-</div>
+      <p>
+        Family belonging, emotional support,
+        and collective identity.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    Digital Humanities Project | Ca' Foscari University
+  </footer>
 
 </body>
 </html>
-
-
-<!-- Google Maps Section -->
-<section style="text-align:center; margin:60px 0; font-family: Arial, sans-serif;">
-
-  <h2 style="
-    font-size:34px;
-    color:#333;
-    text-shadow: 2px 2px 4px #aaa;
-    margin-bottom:20px;">
-    Santa Marta Vaporetto Stop on Google Maps
-  </h2>
-
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5599.596214994055!2d12.311259999999999!3d45.433571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1b6ad9c59dd%3A0x4ae46eedeba0c7ea!2sS.%20Marta!5e0!3m2!1sru!2sit!4v1769359017883!5m2!1sru!2sit"
-    width="80%"
-    height="450"
-    style="border:0; border-radius:12px;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-
-</section>
-
-<!-- Historical Santa Marta Section -->
-<section style="text-align:center; margin:60px 0; font-family: Arial, sans-serif;">
-
-  <h2 style="
-    font-size:32px;
-    color:#333;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    margin-bottom:20px;">
-    Historical Views of Santa Marta Area
-  </h2>
-
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-
-    <img
-      src="https://i.pinimg.com/originals/61/1b/be/611bbecdc638c006321994008772da9a.jpg"
-      alt="Fondamenta dell'Arzere di Santa Marta historic"
-      style="width:30%; min-width:240px; border-radius:10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-
-  </div>
-
-  <p style="font-size:16px; color:#555; margin-top:16px;">
-    These images show historical views of Venice and the port area near Santa Marta in the 19th–early 20th century.
-  </p>
-
-</section>
